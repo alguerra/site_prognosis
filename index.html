@@ -39,12 +39,37 @@
             padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid var(--border-color);
         }
+
+        .nav-links { display: flex; align-items: center; }
+
         .nav-links a {
             color: var(--white); text-decoration: none; font-size: 0.7rem;
             letter-spacing: 1px; text-transform: uppercase; margin-left: 15px;
             transition: 0.3s; font-weight: 600;
         }
         .nav-links a:hover { color: var(--accent-blue); }
+
+        /* MENU HAMBÚRGUER */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            z-index: 1100;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--white);
+            transition: 0.4s;
+        }
+
+        /* Animação do X quando ativo */
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
         #vanta-canvas {
             width: 100%; height: 100vh;
@@ -94,7 +119,6 @@
         }
         .btn-outline:hover { background: var(--accent-blue); color: var(--bg-dark); }
 
-        /* FOOTER ESTILIZADO */
         footer {
             background-color: var(--bg-footer);
             padding: 100px 10% 40px 10%;
@@ -145,15 +169,37 @@
         .social-links a { color: var(--white); text-decoration: none; font-weight: 600; transition: 0.3s; }
         .social-links a:hover { color: var(--accent-blue); }
 
-        @media (max-width: 1000px) {
+        /* MOBILE STYLES */
+        @media (max-width: 900px) {
+            .hamburger { display: flex; }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 75%;
+                height: 100vh;
+                background: rgba(8, 10, 12, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+                border-left: 1px solid var(--border-color);
+                z-index: 1050;
+            }
+
+            .nav-links.active { right: 0; }
+            .nav-links a { margin: 20px 0; font-size: 1.1rem; width: 100%; text-align: center; }
+
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            h1 { font-size: 2.2rem; } 
+            .product-highlight { padding: 40px; }
+            .product-visual { border-left: none; border-top: 1px solid var(--border-color); }
         }
 
         @media (max-width: 600px) {
             .footer-grid { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
-            h1 { font-size: 2.2rem; } 
-            .product-highlight { padding: 40px; }
         }
     </style>
 </head>
@@ -161,7 +207,14 @@
 
     <nav>
         <img src="logomarca_sem_fundo_1.png" alt="Prognosis" style="height: 25px;">
-        <div class="nav-links">
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="nav-links">
             <a href="#prognosis">Empresa</a>
             <a href="#solucoes">Soluções</a>
             <a href="#nexus">NexusAI</a>
@@ -205,7 +258,7 @@
                 <span style="color: var(--accent-blue); font-weight: 700; letter-spacing: 3px; font-size: 0.7rem; text-transform: uppercase;">Integridade e Salvaguarda Estrutural (SOTA)</span>
                 <h2 style="color: white; font-size: 2.5rem; margin: 20px 0; font-family: 'Montserrat';">NexusAI</h2>
                 <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px;">
-                    O NexusAI é um motor de <strong>Aprendizado Não Supervisionado</strong> desenvolvido para o monitoramento autônomo de integridade operacional. Através do mapeamento da <strong>geometria de dados</strong> em alta dimensionalidade, ele identifica <strong>anomalias estruturais</strong> e desvios dinâmicos.
+                    O NexusAI é um motor de <strong>Aprendizado Auto Supervisionado</strong> desenvolvido para o monitoramento autônomo de integridade operacional. Através do mapeamento da <strong>geometria de dados</strong> em alta dimensionalidade, ele identifica <strong>anomalias estruturais</strong> e desvios dinâmicos.
                 </p>
                 <a href="#contato" class="btn-outline" style="font-size: 0.65rem; padding: 12px 25px;">Sessão Técnica Nexus</a>
             </div>
@@ -307,6 +360,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     
     <script>
+        // VANTA.JS INITIALIZATION
         VANTA.NET({
             el: "#vanta-canvas",
             mouseControls: true, 
@@ -324,6 +378,25 @@
             dotsColor: 0x4db6ac
         });
 
+        // MENU HAMBURGUER LOGIC
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const links = document.querySelectorAll('.nav-links a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // REVEAL ANIMATION ON SCROLL
         const revealSections = () => {
             const reveals = document.querySelectorAll('.reveal');
             reveals.forEach(reveal => {
