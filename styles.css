@@ -6,9 +6,9 @@
   --color-bg-primary: #FAFAF8;
   --color-bg-secondary: #F3F2EE;
   --color-border: #E2E1DC;
-  --color-border-hover: rgba(46, 124, 246, 0.4);
-  --color-accent: #2E7CF6;
-  --color-accent-dark: #1A65D6;
+  --color-border-hover: rgba(29, 78, 216, 0.4);
+  --color-accent: #1D4ED8;
+  --color-accent-dark: #1640B0;
   --color-text-primary: #0D1117;
   --color-text-secondary: #5A6068;
   --color-text-muted: #8B9099;
@@ -190,7 +190,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 0 80px;
+  padding: 80px 0 56px;
   overflow: hidden;
   background: var(--color-bg-primary);
 }
@@ -216,8 +216,8 @@ body {
   align-items: center;
   padding: 6px 16px;
   border-radius: 999px;
-  background: rgba(46, 124, 246, 0.06);
-  border: 1px solid rgba(46, 124, 246, 0.15);
+  background: rgba(29, 78, 216, 0.06);
+  border: 1px solid rgba(29, 78, 216, 0.15);
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--color-accent);
@@ -227,7 +227,7 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -236,7 +236,7 @@ body {
 }
 
 .title-accent {
-  font-style: italic;
+  font-style: normal;
   color: var(--color-accent);
 }
 
@@ -271,7 +271,7 @@ body {
 
 /* ---- Sections ---- */
 .section {
-  padding: 120px 0;
+  padding: 72px 0;
   position: relative;
 }
 
@@ -281,7 +281,7 @@ body {
 
 .section-header {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .section-label {
@@ -296,7 +296,7 @@ body {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -325,7 +325,7 @@ body {
 }
 
 .comparison-card {
-  padding: 40px 36px;
+  padding: 28px 24px;
   border-radius: 10px;
   border: 1px solid var(--color-border);
   background: #fff;
@@ -399,7 +399,7 @@ body {
 }
 
 .solution-card {
-  padding: 40px 36px;
+  padding: 28px 24px;
   border-radius: 10px;
   border: 1px solid var(--color-border);
   background: #fff;
@@ -493,7 +493,7 @@ body {
 
 .stat-card {
   text-align: center;
-  padding: 48px 32px;
+  padding: 32px 24px;
   border-radius: 10px;
   border: 1px solid var(--color-border);
   background: #fff;
@@ -627,7 +627,7 @@ body {
   }
 
   .hero {
-    padding: 100px 0 60px;
+    padding: 80px 0 48px;
     min-height: auto;
   }
 
@@ -658,7 +658,7 @@ body {
   }
 
   .hero-title {
-    font-size: clamp(1.8rem, 7vw, 2.6rem);
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
   }
 
   .comparison-grid {
@@ -674,7 +674,7 @@ body {
   }
 
   .section {
-    padding: 80px 0;
+    padding: 56px 0;
   }
 
   .hero-ctas {
@@ -700,10 +700,10 @@ body {
 
   .comparison-card,
   .solution-card {
-    padding: 28px 24px;
+    padding: 20px 18px;
   }
 
   .stat-card {
-    padding: 36px 24px;
+    padding: 24px 18px;
   }
 }
