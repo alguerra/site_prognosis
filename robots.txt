@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prognosis.com.br/sitemap.xml

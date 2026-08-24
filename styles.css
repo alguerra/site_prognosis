@@ -656,6 +656,20 @@ body {
   color: var(--color-text-muted);
 }
 
+.footer-email {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-email:hover {
+  color: var(--color-accent);
+}
+
+.footer-bottom p + p {
+  margin-top: 6px;
+}
+
 /* ---- Scroll Animations ---- */
 .animate-target {
   opacity: 0;
