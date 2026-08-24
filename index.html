@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%232E7CF6'/><circle cx='10' cy='16' r='3' fill='white'/><circle cx='22' cy='10' r='3' fill='white'/><circle cx='22' cy='22' r='3' fill='white'/><line x1='13' y1='15' x2='19' y2='11' stroke='white' stroke-width='1.5'/><line x1='13' y1='17' x2='19' y2='21' stroke='white' stroke-width='1.5'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%231E40AF'/><circle cx='10' cy='16' r='3' fill='white'/><circle cx='22' cy='10' r='3' fill='white'/><circle cx='22' cy='22' r='3' fill='white'/><line x1='13' y1='15' x2='19' y2='11' stroke='white' stroke-width='1.5'/><line x1='13' y1='17' x2='19' y2='21' stroke='white' stroke-width='1.5'/></svg>">
 </head>
 <body>
 
@@ -18,14 +18,14 @@
     <div class="container header-inner">
       <a href="#" class="logo" aria-label="Prognosis Home">
         <svg class="logo-icon" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="8" cy="16" r="4" fill="#1D4ED8"/>
-          <circle cx="24" cy="8" r="3.5" fill="#3B82F6"/>
-          <circle cx="24" cy="24" r="3.5" fill="#3B82F6"/>
-          <circle cx="36" cy="16" r="2.5" fill="#60A5FA" opacity="0.7"/>
-          <line x1="12" y1="14.5" x2="20.5" y2="9.5" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round"/>
-          <line x1="12" y1="17.5" x2="20.5" y2="22.5" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round"/>
-          <line x1="27.5" y1="9" x2="33.5" y2="14.5" stroke="#3B82F6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
-          <line x1="27.5" y1="23" x2="33.5" y2="17.5" stroke="#3B82F6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <circle cx="8" cy="16" r="4" fill="#1E40AF"/>
+          <circle cx="24" cy="8" r="3.5" fill="#2563EB"/>
+          <circle cx="24" cy="24" r="3.5" fill="#2563EB"/>
+          <circle cx="36" cy="16" r="2.5" fill="#3B82F6" opacity="0.7"/>
+          <line x1="12" y1="14.5" x2="20.5" y2="9.5" stroke="#1E40AF" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="12" y1="17.5" x2="20.5" y2="22.5" stroke="#1E40AF" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="27.5" y1="9" x2="33.5" y2="14.5" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          <line x1="27.5" y1="23" x2="33.5" y2="17.5" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
         </svg>
         <span class="logo-text">prognosis</span>
       </a>
@@ -66,7 +66,77 @@
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="assets/dashboard.png" alt="Dashboard de análise causal com simulação de cenários e otimização de decisões" class="hero-image" loading="eager">
+        <svg class="hero-image" viewBox="0 0 560 470" role="img" font-family="Inter, sans-serif" xmlns="http://www.w3.org/2000/svg">
+          <title>Do mapa causal à decisão ótima: modelo causal de preço, verba e volume sobre margem, e curva de simulação com faixa de confiança e ponto ótimo</title>
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#1E40AF"/>
+            </marker>
+            <marker id="arrow-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#93A8E8"/>
+            </marker>
+          </defs>
+
+          <!-- moldura de painel -->
+          <rect x="1" y="1" width="558" height="468" rx="12" fill="#FFFFFF" stroke="#E2E1DC"/>
+          <circle cx="22" cy="24" r="4" fill="#E2E1DC"/>
+          <circle cx="38" cy="24" r="4" fill="#E2E1DC"/>
+          <circle cx="54" cy="24" r="4" fill="#E2E1DC"/>
+          <text x="74" y="28" font-size="11" fill="#8B9099">prognosis · simulador causal</text>
+          <line x1="1" y1="44" x2="559" y2="44" stroke="#F0EFEA"/>
+
+          <!-- 1 · mapa causal -->
+          <text x="24" y="68" font-size="10" letter-spacing="1.5" fill="#8B9099">1 · MAPA CAUSAL</text>
+
+          <path d="M110,80 C250,44 380,58 448,94" stroke="#93A8E8" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#arrow-light)"/>
+
+          <line x1="110" y1="90" x2="242" y2="110" stroke="#1E40AF" stroke-width="1.8" marker-end="url(#arrow)"/>
+          <line x1="140" y1="146" x2="242" y2="122" stroke="#1E40AF" stroke-width="1.8" marker-end="url(#arrow)"/>
+          <line x1="332" y1="116" x2="428" y2="116" stroke="#1E40AF" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+          <text x="155" y="88" font-size="10" fill="#5A6068">elasticidade −1,2</text>
+          <text x="345" y="106" font-size="10" fill="#5A6068">+R$ 0,38/un.</text>
+
+          <rect x="40" y="76" width="70" height="28" rx="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+          <text x="75" y="94" font-size="12" font-weight="600" fill="#1E40AF" text-anchor="middle">Preço</text>
+
+          <rect x="26" y="138" width="114" height="28" rx="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+          <text x="83" y="156" font-size="12" font-weight="600" fill="#1E40AF" text-anchor="middle">Verba de mídia</text>
+
+          <rect x="248" y="102" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+          <text x="288" y="120" font-size="12" font-weight="600" fill="#1E40AF" text-anchor="middle">Volume</text>
+
+          <rect x="434" y="102" width="86" height="28" rx="14" fill="#1E40AF"/>
+          <text x="477" y="120" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Margem</text>
+
+          <!-- 2 · simulação e ótimo -->
+          <text x="24" y="212" font-size="10" letter-spacing="1.5" fill="#8B9099">2 · SIMULAÇÃO — MARGEM VS. PREÇO</text>
+
+          <line x1="48" y1="270" x2="536" y2="270" stroke="#F0EFEA"/>
+          <line x1="48" y1="310" x2="536" y2="310" stroke="#F0EFEA"/>
+          <line x1="48" y1="350" x2="536" y2="350" stroke="#F0EFEA"/>
+          <line x1="48" y1="390" x2="536" y2="390" stroke="#F0EFEA"/>
+
+          <path d="M48,374 C150,290 250,242 340,234 C420,228 480,268 536,318 L536,386 C480,324 420,276 340,278 C250,282 150,322 48,398 Z" fill="#1E40AF" opacity="0.10"/>
+          <path d="M48,386 C150,306 250,262 340,256 C420,252 480,296 536,352" stroke="#1E40AF" stroke-width="2.5" fill="none"/>
+
+          <line x1="340" y1="256" x2="340" y2="414" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <circle cx="340" cy="256" r="10" fill="#1E40AF" opacity="0.15"/>
+          <circle cx="340" cy="256" r="5" fill="#1E40AF"/>
+
+          <rect x="356" y="228" width="172" height="44" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1" opacity="0.97"/>
+          <text x="366" y="246" font-size="11" font-weight="700" fill="#1E40AF">Ótimo: preço +4%</text>
+          <text x="366" y="262" font-size="11" fill="#5A6068">margem +R$ 2,1 a 2,8M</text>
+
+          <text x="62" y="336" font-size="10" fill="#8B9099">faixa de 90% de confiança</text>
+
+          <line x1="48" y1="414" x2="536" y2="414" stroke="#E2E1DC"/>
+          <text x="92" y="434" font-size="10" fill="#8B9099" text-anchor="middle">−8%</text>
+          <text x="228" y="434" font-size="10" fill="#8B9099" text-anchor="middle">0</text>
+          <text x="340" y="434" font-size="10" fill="#8B9099" text-anchor="middle">+4%</text>
+          <text x="472" y="434" font-size="10" fill="#8B9099" text-anchor="middle">+8%</text>
+          <text x="536" y="452" font-size="10" fill="#B8BCC2" text-anchor="end">cenário ilustrativo</text>
+        </svg>
       </div>
     </div>
   </section>
@@ -101,7 +171,7 @@
         </div>
         <div class="comparison-card comparison-new">
           <div class="comparison-icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="14" cy="24" r="5" fill="#1D4ED8"/><circle cx="34" cy="14" r="4" fill="#3B82F6"/><circle cx="34" cy="34" r="4" fill="#3B82F6"/><line x1="19" y1="22" x2="30" y2="15" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="26" x2="30" y2="33" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/><path d="M30 14 L34 14 L32 10" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 34 L34 34 L32 38" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="14" cy="24" r="5" fill="#1E40AF"/><circle cx="34" cy="14" r="4" fill="#2563EB"/><circle cx="34" cy="34" r="4" fill="#2563EB"/><line x1="19" y1="22" x2="30" y2="15" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="26" x2="30" y2="33" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/><path d="M30 14 L34 14 L32 10" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 34 L34 34 L32 38" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>Ciência da Decisão</h3>
           <ul>
@@ -130,11 +200,11 @@
         <div class="solution-card">
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
-              <circle cx="12" cy="24" r="5" stroke="#1D4ED8" stroke-width="2"/>
-              <circle cx="36" cy="12" r="4" stroke="#3B82F6" stroke-width="2"/>
-              <circle cx="36" cy="36" r="4" stroke="#3B82F6" stroke-width="2"/>
-              <path d="M17 22L32 13" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <path d="M17 26L32 35" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <circle cx="12" cy="24" r="5" stroke="#1E40AF" stroke-width="2"/>
+              <circle cx="36" cy="12" r="4" stroke="#2563EB" stroke-width="2"/>
+              <circle cx="36" cy="36" r="4" stroke="#2563EB" stroke-width="2"/>
+              <path d="M17 22L32 13" stroke="#1E40AF" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M17 26L32 35" stroke="#1E40AF" stroke-width="1.5" stroke-dasharray="3 3"/>
             </svg>
           </div>
           <h3>Inferência Causal</h3>
@@ -143,11 +213,11 @@
         <div class="solution-card">
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
-              <rect x="6" y="8" width="36" height="32" rx="4" stroke="#1D4ED8" stroke-width="2"/>
-              <path d="M6 16H42" stroke="#1D4ED8" stroke-width="1.5"/>
-              <path d="M14 26L20 22L26 28L34 20" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 26L20 22L26 28L34 20" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3" transform="translate(0, 4)" opacity="0.4"/>
-              <path d="M14 26L20 22L26 28L34 20" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3" transform="translate(0, -4)" opacity="0.4"/>
+              <rect x="6" y="8" width="36" height="32" rx="4" stroke="#1E40AF" stroke-width="2"/>
+              <path d="M6 16H42" stroke="#1E40AF" stroke-width="1.5"/>
+              <path d="M14 26L20 22L26 28L34 20" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 26L20 22L26 28L34 20" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3" transform="translate(0, 4)" opacity="0.4"/>
+              <path d="M14 26L20 22L26 28L34 20" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3" transform="translate(0, -4)" opacity="0.4"/>
             </svg>
           </div>
           <h3>Simulação de Cenários</h3>
@@ -157,10 +227,10 @@
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
               <circle cx="24" cy="24" r="16" stroke="#1B2E4A" stroke-width="2"/>
-              <path d="M24 8 A16 16 0 0 1 40 24" stroke="#1D4ED8" stroke-width="3" stroke-linecap="round"/>
-              <path d="M24 12 A12 12 0 0 1 36 24" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="24" cy="24" r="3" fill="#1D4ED8"/>
-              <line x1="24" y1="24" x2="35" y2="14" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 8 A16 16 0 0 1 40 24" stroke="#1E40AF" stroke-width="3" stroke-linecap="round"/>
+              <path d="M24 12 A12 12 0 0 1 36 24" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="#1E40AF"/>
+              <line x1="24" y1="24" x2="35" y2="14" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
           <h3>Otimização de Resultados</h3>
@@ -169,11 +239,11 @@
         <div class="solution-card">
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
-              <rect x="4" y="4" width="18" height="18" rx="3" stroke="#1D4ED8" stroke-width="2"/>
-              <rect x="26" y="4" width="18" height="18" rx="3" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
-              <rect x="4" y="26" width="18" height="18" rx="3" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
-              <rect x="26" y="26" width="18" height="18" rx="3" stroke="#1D4ED8" stroke-width="2"/>
-              <path d="M22 13H26M13 22V26M35 22V26M22 35H26" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              <rect x="4" y="4" width="18" height="18" rx="3" stroke="#1E40AF" stroke-width="2"/>
+              <rect x="26" y="4" width="18" height="18" rx="3" stroke="#2563EB" stroke-width="2" opacity="0.6"/>
+              <rect x="4" y="26" width="18" height="18" rx="3" stroke="#2563EB" stroke-width="2" opacity="0.6"/>
+              <rect x="26" y="26" width="18" height="18" rx="3" stroke="#1E40AF" stroke-width="2"/>
+              <path d="M22 13H26M13 22V26M35 22V26M22 35H26" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
             </svg>
           </div>
           <h3>Enterprise Causal Simulator</h3>
@@ -199,9 +269,9 @@
         <div class="solution-card">
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
-              <rect x="10" y="6" width="28" height="36" rx="3" stroke="#1D4ED8" stroke-width="2"/>
-              <path d="M16 16H32M16 23H32M16 30H25" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
-              <path d="M27 34L30 37L36 31" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="10" y="6" width="28" height="36" rx="3" stroke="#1E40AF" stroke-width="2"/>
+              <path d="M16 16H32M16 23H32M16 30H25" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+              <path d="M27 34L30 37L36 31" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <h3>O que você recebe</h3>
@@ -210,10 +280,10 @@
         <div class="solution-card">
           <div class="solution-icon">
             <svg viewBox="0 0 48 48" fill="none">
-              <circle cx="12" cy="12" r="6" stroke="#1D4ED8" stroke-width="2"/>
-              <circle cx="36" cy="24" r="6" stroke="#3B82F6" stroke-width="2"/>
-              <circle cx="12" cy="36" r="6" stroke="#3B82F6" stroke-width="2" opacity="0.7"/>
-              <path d="M18 14L30 22M18 34L30 26" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <circle cx="12" cy="12" r="6" stroke="#1E40AF" stroke-width="2"/>
+              <circle cx="36" cy="24" r="6" stroke="#2563EB" stroke-width="2"/>
+              <circle cx="12" cy="36" r="6" stroke="#2563EB" stroke-width="2" opacity="0.7"/>
+              <path d="M18 14L30 22M18 34L30 26" stroke="#1E40AF" stroke-width="1.5" stroke-dasharray="3 3"/>
             </svg>
           </div>
           <h3>Variantes por aplicação</h3>
@@ -349,14 +419,14 @@
       <div class="footer-brand">
         <a href="#" class="logo" aria-label="Prognosis Home">
           <svg class="logo-icon" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="16" r="4" fill="#1D4ED8"/>
-            <circle cx="24" cy="8" r="3.5" fill="#3B82F6"/>
-            <circle cx="24" cy="24" r="3.5" fill="#3B82F6"/>
-            <circle cx="36" cy="16" r="2.5" fill="#60A5FA" opacity="0.7"/>
-            <line x1="12" y1="14.5" x2="20.5" y2="9.5" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round"/>
-            <line x1="12" y1="17.5" x2="20.5" y2="22.5" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round"/>
-            <line x1="27.5" y1="9" x2="33.5" y2="14.5" stroke="#3B82F6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
-            <line x1="27.5" y1="23" x2="33.5" y2="17.5" stroke="#3B82F6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            <circle cx="8" cy="16" r="4" fill="#1E40AF"/>
+            <circle cx="24" cy="8" r="3.5" fill="#2563EB"/>
+            <circle cx="24" cy="24" r="3.5" fill="#2563EB"/>
+            <circle cx="36" cy="16" r="2.5" fill="#3B82F6" opacity="0.7"/>
+            <line x1="12" y1="14.5" x2="20.5" y2="9.5" stroke="#1E40AF" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="12" y1="17.5" x2="20.5" y2="22.5" stroke="#1E40AF" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="27.5" y1="9" x2="33.5" y2="14.5" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            <line x1="27.5" y1="23" x2="33.5" y2="17.5" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
           </svg>
           <span class="logo-text">prognosis</span>
         </a>

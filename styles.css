@@ -6,9 +6,9 @@
   --color-bg-primary: #FAFAF8;
   --color-bg-secondary: #F3F2EE;
   --color-border: #E2E1DC;
-  --color-border-hover: rgba(29, 78, 216, 0.4);
-  --color-accent: #1D4ED8;
-  --color-accent-dark: #1640B0;
+  --color-border-hover: rgba(30, 64, 175, 0.4);
+  --color-accent: #1E40AF;
+  --color-accent-dark: #16337F;
   --color-text-primary: #0D1117;
   --color-text-secondary: #5A6068;
   --color-text-muted: #8B9099;
@@ -216,8 +216,8 @@ body {
   align-items: center;
   padding: 6px 16px;
   border-radius: 999px;
-  background: rgba(29, 78, 216, 0.06);
-  border: 1px solid rgba(29, 78, 216, 0.15);
+  background: rgba(30, 64, 175, 0.06);
+  border: 1px solid rgba(30, 64, 175, 0.15);
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--color-accent);
